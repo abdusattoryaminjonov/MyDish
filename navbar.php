@@ -19,12 +19,24 @@
         <p></p>
       </div>
       <ul class="nav">
-        <li><a href="./index.php" title="">Uy</a></li>
-        <li><a href="./about.php" title="">Haqida</a></li>
-        <li><a href="./services.php" title="">Servislar</a></li>
-        <li><a href="./contact.php" title="">Kontakt</a></li>
-        <li><a href="./components.php" title="">Komponentlar</a></li>
-
+        <li><a href="./index.php" title="">
+                <img src="./assets/images/home.jpg">
+            </a></li>
+        <li><a href="./about.php" title="">
+                <img src="./assets/images/collage.jpg">
+            </a></li>
+        <li><a href="./services.php" title="">
+                <img src="./assets/images/search.jpg">
+            </a></li>
+        <li><a href="./contact.php" title="">
+                <img src="./assets/images/addnew.jpg">
+            </a></li>
+        <li><a href="./components.php" title="">
+                <img src="./assets/images/like.jpg">
+            </a></li>
+          <li><a href="./components.php" title="">
+                  <img src="./assets/images/user.jpg">
+              </a></li>
       </ul>
 
       <nav class="nav-footer">
