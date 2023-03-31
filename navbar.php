@@ -20,13 +20,13 @@
       </div>
       <ul class="nav">
         <li><a href="./index.php" title="">
-                <img src="./assets/images/home.jpg">
+                <img  src="./assets/images/home_1.ico">
             </a></li>
         <li><a href="./about.php" title="">
-                <img src="./assets/images/collage.jpg">
+                <img src="./assets/images/collage.ico">
             </a></li>
         <li><a href="./services.php" title="">
-                <img src="./assets/images/search.jpg">
+                <img  src="./assets/images/search_5.ico">
             </a></li>
         <li><a href="./contact.php" title="">
                 <img src="./assets/images/addnew.jpg">
@@ -35,7 +35,7 @@
                 <img src="./assets/images/like.jpg">
             </a></li>
           <li><a href="./components.php" title="">
-                  <img src="./assets/images/user.jpg">
+                  <img src="./assets/images/user.ico">
               </a></li>
       </ul>
 

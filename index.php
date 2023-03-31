@@ -14,13 +14,11 @@
   
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
-  <link rel="stylesheet" href="./mystyle.css">
-
-
+  <link href="./mystyle.css" rel="stylesheet">
 
   <title>Sarlavha</title>  
 
-<link href="./main.82cfd66e.css" rel="stylesheet"></head>
+   <link href="./main.82cfd66e.css" rel="stylesheet"></head>
 
 <body>
 
