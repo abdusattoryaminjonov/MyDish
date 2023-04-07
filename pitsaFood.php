@@ -15,7 +15,7 @@
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
   <link href="./assets/favicon.ico" rel="icon">
   <link href="./mystyle.css" rel="stylesheet">
-  
+
 
   <title>Sarlavha</title>  
 
@@ -33,12 +33,12 @@
     <div class="grid-sizer"></div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-12.jpg">
-      <a href="./fishFood.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a  class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
-            <p  >Discover more</p>
+            <p>Discover more</p>
           </div>
         </div>
       </a>
@@ -46,8 +46,8 @@
 
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-05.jpg">
-      <a href="./nationalFood.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a  class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -59,7 +59,7 @@
 
     <div class="grid-item">
       <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
-      <a href="./pitsaFood.php" class="project-description">
+      <a class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -69,8 +69,8 @@
       </a>
     </div>
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-04.jpg">
-      <a href="./project.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -81,8 +81,8 @@
     </div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-07.jpg">
-      <a href="./project.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -93,8 +93,8 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-11.jpg">
-      <a href="./project.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a  class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -105,8 +105,8 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-10.jpg">
-      <a href="./project.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a  class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
@@ -116,8 +116,8 @@
       </a>
     </div>
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-03.jpg">
-      <a href="./project.php" class="project-description">
+      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
+      <a  class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
             <h3>Vivamus vestibulum</h3>
