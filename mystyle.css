@@ -3,4 +3,11 @@
     height: 60px !important;
     border-color: blue;
 }
+.post{
+    display: flex;
+    text-align: center;
+}
+.choosephoto input[type="file"]{
+    display: none;
+}
 

@@ -13,11 +13,11 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
-  <link href="./assets/favicon.ico" rel="icon">
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
   <link href="./mystyle.css" rel="stylesheet">
   
 
-  <title>Sarlavha</title>  
+  <title>New Project from Abdusattor</title>  
 
    <link href="./main.82cfd66e.css" rel="stylesheet"></head>
 
