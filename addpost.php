@@ -1,3 +1,7 @@
+<?php
+require_once 'database.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +22,7 @@
   
 
 
-  <title>Sarlavha</title>  
+  <title>MyDish</title>
 
  <link href="./main.82cfd66e.css" rel="stylesheet"></head>
  <link rel="stylesheet" href="./mystyle.css">
@@ -28,7 +32,7 @@
  <!-- Add your content of header -->
  <?php require('navbar.php');?>
 
-
+ 
 <div class="row">
   <div class="col-xs-12">
     <div class="section-container-spacer">
@@ -39,28 +43,55 @@
       consequat.</p>
     </div>
     <div class="section-container-spacer">
-        <form action="" class="reveal-content">
+      <?php if (empty($_POST)): ?>
+        <form action="" class="reveal-content" enctype="multipart/form-data">
             <div class="row">
                 <div class="col-md-6">
                     
                 <?php
                     echo "
-                    <li>
+                    
                       <label class='choosephoto' >
                         <input  type='file' name='photo' accept='image/*'>
                         Choose a Photo
                       </label>
-                    </li><br>";
+                    <br>";
                     echo "<input type='number' name='type' placeholder='Type'><br>";
                     echo "<input type='text' name='headline' placeholder='Headline'><br>";
-                    echo "<textarea class='form-control' rows='3' placeholder='Enter composition'></textarea>";
+                    echo "<textarea class='form-control' rows='3' name='text' placeholder='Enter composition'></textarea>";
                     echo "<input type='number' name='price' placeholder='Price'>";
                 ?>
                 <input type="hidden" name="soni" value="3"><br>
-                <button type="submit" class="btn btn-primary btn-lg">Create</button><br>
+                <button type="submit" name="submit" class="btn btn-primary btn-lg">Create</button><br>
                 </div>
             </div>
         </form>
+        <?php
+
+              endif;
+              if (isset($_POST['submit'])) {
+                  $photo=$_POST['photo'];
+                  $type = $_POST['type'];
+                  $headline = $_POST['headline'];
+                  $text = $_POST['text'];
+                  $price = $_POST['price'];
+                  $upload='/photos/';
+                  $uploadfile=__DIR__.$upload .basename($_FILES['photo']['name']);
+                  $uploadfilebazaga=$upload .basename($_FILES['photo']['name']);
+                  if(move_uploaded_file($_FILES['photo']['tmp_name'],$uploadfile)){
+                      echo"File yuklandi.\n";
+                  }else{
+                      echo"File yuklanmadi!!!\n";
+                  }
+                  print_r($_FILES);
+              $query = "INSERT INTO addpost(photo,headline, type,text,price,)
+                  VALUES ('$uploadfilebazaga','$headline',$type,'text',$price,)";
+                    echo $query;
+
+                  $result = $link->query($query);
+                  if ($result) echo "qo'shildi";
+              }
+        ?>
     </div>
   </div>
 </div>
@@ -74,20 +105,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   navActivePage();
 });
 </script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
-
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
---> <script type="text/javascript" src="./main.85741bff.js"></script></body>
+ <script type="text/javascript" src="./main.85741bff.js"></script>
+</body>
 
 </html>
