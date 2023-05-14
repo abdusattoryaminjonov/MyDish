@@ -26,6 +26,8 @@
 <!-- Add your content of header -->
 <?php require('navbar.php');?>
 <!-- Add your site or app content here -->
+
+
  
 <div class="hero-full-wrapper">
   <div class="grid">

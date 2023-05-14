@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .logo1{
     width: 60px !important;
     height: 60px !important;
@@ -21,4 +23,207 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userpage{
+
+}
+.user_colum{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.user_colum img{
+    box-shadow: rgba(0,0,0,0.25);
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_colum label{
+    margin-left: -10px;
+    margin-top: 70px;
+    font-size: 5px;
+    width: 10px;
+    height: 10px;
+    background: #ec4e34;
+    color: #fff;
+    padding: 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user_colum input[type="file"]{
+    display: none;
+}
+.user_content hr{
+    width:100%;
+}
+.background1 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/images/login_bec.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login1{
+    box-shadow: -7px 9px 33px 0px rgba(0,0,0,0.82);
+    -webkit-box-shadow: -7px 9px 33px 0px rgba(0,0,0,0.82);
+    -moz-box-shadow: -7px 9px 33px 0px rgba(0,0,0,0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 330px;
+    height: 520px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.login2{
+
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+.login2 h1{
+    margin-bottom: 70px;
+    font-family: 'Pacifico', cursive;
+}
+.login2 p{
+    margin-top: -1px;
+    font-size: 15px;
+    font-family: Arial;
+    color: rgba(9, 9, 9, 0.5);
+}
+
+.login2 img{
+    width: 100px;
+    border-radius: 50px;
+}
+
+.inputlogin {
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    border: 3px solid #000;
+    outline: none;
+}
+.inputlogin:hover{
+    border-color: #5cb85c;
+
+}
+.inputlogin:focus{
+    border-color: #5cb85c;
+}
+
+.inputok{
+    font-family:'Pacifico', cursive;
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: #ff7171;
+    margin-bottom: 10px;
+    color: white;
+    transition: 1s;
+}
+.inputok:hover{
+    background-color: white;
+    color:  #ff7171;
+}
+
+.aclas{
+    font-family:'Pacifico', cursive;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.regBody{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/images/registration_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registorDiv{
+    box-shadow: -7px 9px 33px 0px rgba(102,7,7,0.82);
+    -webkit-box-shadow: -7px 9px 33px 0px rgba(102,7,7,0.82);
+    -moz-box-shadow: -7px 9px 33px 0px rgba(102,7,7,0.82);
+    border: 3px solid #660707D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(234, 230, 230, 0.9);
+}
+.login2 label{
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-family:'Pacifico', cursive;
+}
+
+.choosephoto img{
+    width: 25px;
+    height: 25px;!important;
+}
+
+.inputQoshish{
+    font-family:'Pacifico', cursive;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    background-color: #ff7171;
+    margin-bottom: 10px;
+    color: white;
+    transition: 1s;
+}
+.inputQoshish:hover{
+    box-shadow: 2px 2px 127px 40px rgba(255,113,113,0.81);
+    -webkit-box-shadow: 2px 2px 127px 40px rgba(255,113,113,0.81);
+    -moz-box-shadow: 2px 2px 127px 40px rgba(255,113,113,0.81);
+    background-color: white;
+    color:  #ff7171;
+    border-color: #ff7171;
+}
+.userpost{
+    background-color: white;
+    box-shadow: 1px 5px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 5px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 4px 0px rgba(0,0,0,0.75);
+    width: 200px;
+    border: 3px solid rgba(0, 0, 0, 0.33);
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+
+}
+.userpost img{
+    width: 175px;
+    height: 150px;
+}
+.postmenu{
+    display: flex;
+}
+.userpage h1:hover{
+    color: #ff6360;
+}
+.row1{
+    background-image: radial-gradient(circle at 0% 0% , rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 113, 113, 0.58));
 }
