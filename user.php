@@ -21,21 +21,21 @@
                 <h4>Post headline</h4>
                 <p>Pishiriq</p>
                 <h5 >10$</h5>
-                <a href="./html_page/about_post.html" style="text-decoration: none">Tayyorlash</a>
+                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
             </div>
             <div class="userpost">
                 <img src="assets/images/post_image2.png">
                 <h4>Post headline</h4>
                 <p>Ovqat</p>
                 <h5>50$</h5>
-                <a href="./html_page/about_post.html" style="text-decoration: none">Tayyorlash</a>
+                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
             </div>
             <div class="userpost">
                 <img src="assets/images/post_image1.png">
                 <h4>Post headline</h4>
                 <p>Ovqat</p>
                 <h5>40$</h5>
-                <a href="./html_page/about_post.html" style="text-decoration: none">Tayyorlash</a>
+                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
             </div>
         </div>
 

@@ -22,9 +22,7 @@
         <li><a href="./index.php" title="">
                 <img  src="./assets/images/home_1.ico">
             </a></li>
-        <li><a href="./about.php" title="">
-                <img src="./assets/images/collage.ico">
-            </a></li>
+        
         <li><a href="./services.php" title="">
                 <img  src="./assets/images/search_5.ico">
             </a></li>
@@ -32,7 +30,7 @@
                 <img src="./assets/images/addnew.jpg">
             </a></li>
         <li><a href="./components.php" title="">
-                <img src="./assets/images/like.jpg">
+                <img src="./assets/images/chat_message.ico">
             </a></li>
           <li><a href="./user.php" title="">
                   <img src="./assets/images/user.ico">

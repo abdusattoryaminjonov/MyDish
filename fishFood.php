@@ -11,15 +11,13 @@
 
     <div class="post">
       <div class="grid-item">
-        <img class="img-responsive" alt="" src="./assets/images/img-12.jpg">
-
-          <div class="project-text-holder">
-            <div class="project-text-inner">
-              <h3>Vivamus vestibulum</h3>
-              <p>Discover more</p>
-            </div>
-          </div>
-        
+        <img class="img-responsive" src="assets/images/post_image3.png">
+              <div >
+                <h4>Post headline</h4>
+                <p>Pishiriq</p>
+                <h5 >10$</h5>
+                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
+              </div>
       </div>
     </div>
 
