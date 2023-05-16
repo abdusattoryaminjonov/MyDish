@@ -8,14 +8,13 @@
   <div class="grid">
   <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
-
     <div class="post">
       <div class="grid-item">
-        <img class="img-responsive" src="assets/images/post_image3.png">
-              <div >
-                <h4>Post headline</h4>
-                <p>Pishiriq</p>
-                <h5 >10$</h5>
+              <div class="userpost" >
+                  <img class="img-responsive" src="assets/images/post_image3.png">
+                  <h4>Post headline</h4>
+                  <p>Pishiriq</p>
+                  <h5 >10$</h5>
                 <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
               </div>
       </div>

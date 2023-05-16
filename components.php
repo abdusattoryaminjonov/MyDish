@@ -95,7 +95,7 @@
           <div class="row">
             
             <div class="col-md-6">
-               <h3 class="template-title-example">Basic Icons</h2>
+               <h3 class="template-title-example">Basic Icons</h3>
                 <ul class="list-icons">
                   <li>
                     <span class="fa-icon">
@@ -132,7 +132,7 @@
           <h2 class="template-title-example">Buttons</h2>
           <div class="row">
             <div class="col-md-6">
-              <h3 class="template-title-example">Primary</h2>
+              <h3 class="template-title-example">Primary</h3>
               <div class="row">
                   <div class="col-md-6">
                   <p><a href="" class="btn btn-primary btn-lg">Primary Large</a></p>
@@ -141,7 +141,7 @@
                 </div>
               </div>
 
-              <h3 class="template-title-example">Default</h2>
+              <h3 class="template-title-example">Default</h3>
               <div class="row">
                   <div class="col-md-6">
                   <p><a href="" class="btn btn-default btn-lg">Default Large</a></p>
@@ -153,7 +153,7 @@
             </div>
 
             <div class="col-md-6">
-              <h3 class="template-title-example">Secondary</h2>
+              <h3 class="template-title-example">Secondary</h3>
               <div class="row">
                   <div class="col-md-6">
                   <p><a href="" class="btn btn-info btn-lg">Secondary Large</a></p>

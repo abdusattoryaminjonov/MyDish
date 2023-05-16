@@ -7,7 +7,6 @@
 }
 .post{
     display: flex;
-    text-align: center;
 }
 .choosephoto input[type="file"]{
     display: none;
@@ -255,4 +254,90 @@
 }
 .p_s p{
     margin: 50px 0px 50px 0px;
+}
+.layout_flex{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images3{
+    width: 300px;
+    height: 150px;
+}
+.images{
+    width: 400px;
+    height: 400px;
+}
+.images1{
+    width: 600px;
+    height: 300px;
+}
+.menu_d{
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/menu_image/dessert.png");
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_d a{
+    text-decoration: none;
+    padding: 5px  10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.67);
+    transition: 0.8s;
+}
+.menu_d a:hover{
+    box-shadow: 0px 0px 40px -6px rgba(236,78,52,1);
+    -webkit-box-shadow: 0px 0px 40px -6px rgba(236,78,52,1);
+    -moz-box-shadow: 0px 0px 40px -6px rgba(236,78,52,1);
+    color: white;
+    padding: 30px ;
+    border-radius: 50%;
+    background-color: rgba(236, 78, 52, 0.76);
+}
+.menu_i{
+    margin: 10px;
+}
+.menu_m{
+    margin: 10px;
+}
+.menu_o{
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("assets/menu_image/ovqat.png");
+    margin: 10px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_o a{
+    font-size: 25px;
+    text-decoration: none;
+    padding: 5px  10px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.67);
+    transition: 0.8s;
+}
+.menu_o a:hover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 40px -6px rgba(49, 255, 26, 0.69);
+    -webkit-box-shadow: 0px 0px 40px -6px rgba(49, 255, 26, 0.69);
+    -moz-box-shadow: 0px 0px 40px -6px rgba(49, 255, 26, 0.69);
+    color: white;
+    padding: 30px ;
+    border-radius:75%/ 50% ;
+    background-color: rgba(49, 255, 26, 0.69);
+}
+
+.menu_s{
+    margin: 10px;
 }

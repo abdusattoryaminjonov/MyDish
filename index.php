@@ -29,108 +29,81 @@
 
 
  
-<div class="hero-full-wrapper">
-  <div class="grid">
-  <div class="gutter-sizer"></div>
-    <div class="grid-sizer"></div>
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-12.jpg">
-      <a href="./fishFood.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p  >Discover more</p>
+  <div class="layout_flex">
+      <div class="menu_o">
+          <a href="./nationalFood.php" class="ovqat_a">
+              Ko'proq
+              <!--<div class="project-text-holder">
+                  <div class="project-text-inner">
+                      <h3>Vivamus vestibulum</h3>
+                      <p>Discover more</p>
+                  </div>
+              </div>-->
+          </a>
+      </div>
+      <div class="menu_dessert">
+          <div class="menu_d">
+              <a href="./pitsaFood.php" class="project-description">
+                  <h4>Ko'proq</h4>
+                  <!--   <div class="project-text-holder">
+                  <div class="project-text-inner">
+                    <h3>Vivamus vestibulum</h3>
+                    <p>Discover more</p>
+                  </div>
+                  </div>-->
+              </a>
           </div>
-        </div>
-      </a>
-    </div>
-
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-05.jpg">
-      <a href="./nationalFood.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
+          <div class="menu_m">
+              <a href="./pitsaFood.php" class="menu_m1">
+                  <img class="images3" alt="" src="./assets/menu_image/fastfood.png">
+                  <!--   <div class="project-text-holder">
+                  <div class="project-text-inner">
+                    <h3>Vivamus vestibulum</h3>
+                    <p>Discover more</p>
+                  </div>
+                  </div>-->
+              </a>
           </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-13.jpg">
-      <a href="./pitsaFood.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-04.jpg">
-      <a href="./project.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-07.jpg">
-      <a href="./project.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-11.jpg">
-      <a href="./project.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-10.jpg">
-      <a href="./project.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="grid-item">
-      <img class="img-responsive" alt="" src="./assets/images/img-03.jpg">
-      <a href="./project.php" class="project-description">
-        <div class="project-text-holder">
-          <div class="project-text-inner">
-            <h3>Vivamus vestibulum</h3>
-            <p>Discover more</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    
+      </div>
   </div>
-</div>
+  <div class="layout_flex">
+      <div class="menu_ichimlik">
+          <div class="menu_i">
+              <a href="./pitsaFood.php" class="project-description">
+                  <img class="images3" alt="" src="./assets/menu_image/ichimliklar.png">
+                  <!--   <div class="project-text-holder">
+                  <div class="project-text-inner">
+                    <h3>Vivamus vestibulum</h3>
+                    <p>Discover more</p>
+                  </div>
+                  </div>-->
+              </a>
+          </div>
+          <div class="menu_m">
+              <a href="./pitsaFood.php" class="menu_m1">
+                  <img class="images3" alt="" src="./assets/menu_image/musqaymoq.png">
+                  <!--   <div class="project-text-holder">
+                  <div class="project-text-inner">
+                    <h3>Vivamus vestibulum</h3>
+                    <p>Discover more</p>
+                  </div>
+                  </div>-->
+              </a>
+          </div>
+      </div>
+    <div class="menu_s">
+      <a href="./project.php" class="project-description">
+          <img class="images1" alt="" src="./assets/menu_image/snacks.png">
+          <!--<div class="project-text-holder">
+            <div class="project-text-inner">
+              <h3>Vivamus vestibulum</h3>
+              <p>Discover more</p>
+            </div>
+          </div>-->
+      </a>
+    </div>
+  </div>
+
 
 
 <script>
@@ -148,19 +121,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+<script type="text/javascript" src="./main.85741bff.js"></script>
 
-<script>
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-XXXXX-X', 'auto');
-  ga('send', 'pageview');
-</script>
-
---><script type="text/javascript" src="./main.85741bff.js"></script></body>
-
+</body>
 </html>
