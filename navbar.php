@@ -19,37 +19,18 @@
         <p></p>
       </div>
       <ul class="nav">
-        <li><a href="./index.php" title="">
-                <img  src="./assets/images/home_1.ico">
-            </a></li>
-        
-        <li><a href="./services.php" title="">
-                <img  src="./assets/images/search_5.ico">
-            </a></li>
-        <li><a href="./addpost.php" title="">
-                <img src="./assets/images/addnew.jpg">
-            </a></li>
-        <li><a href="./components.php" title="">
-                <img src="./assets/images/chat_message.ico">
-            </a></li>
-          <li><a href="./user.php" title="">
-                  <img src="./assets/images/user.ico">
-              </a></li>
+        <li><a href="./index.php" class="menu_hover" title=""><img  src="./assets/navbar_icon/hous.svg"></a></li>
+        <li><a href="./fulldata.php" class="menu_hover" title=""><img  src="./assets/navbar_icon/search.svg"></a></li>
+        <li><a href="./addpost.php" class="menu_add" title=""><img src="./assets/navbar_icon/addpost.svg"></a></li>
+        <li><a href="./components.php" class="menu_hover" title=""><img src="./assets/navbar_icon/chat.svg"></a></li>
+        <li><a href="./user.php" class="menu_hover" title=""><img src="./assets/navbar_icon/user.svg"></a></li>
       </ul>
 
       <nav class="nav-footer">
-        <p class="nav-footer-social-buttons">
-          <a class="fa-icon" href="https://www.instagram.com/" title="">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a class="fa-icon" href="https://dribbble.com/" title="">
-            <i class="fa fa-dribbble"></i>
-          </a>
-          <a class="fa-icon" href="https://twitter.com/" title="">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </p>
-        <p>© Untitled | Website created with <a href="#">Abdusattor & Akbar</a>/<a href="#" >Students</a></p>
+        <a href="./logout.php" class="menu_hover" title=""><img src="./assets/navbar_icon/log_out.svg"></a>
+          <br>
+          <br>
+        <p><a href="#">ABOUT</a></p>
       </nav>  
     </div> 
   </nav>

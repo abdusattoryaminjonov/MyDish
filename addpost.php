@@ -61,8 +61,8 @@
                       echo"File yuklanmadi!!!\n";
                   }
                   //print_r($_FILES);
-                  $query = "INSERT INTO addpost(photo,headline,type,composition,price)
-                  VALUES ('$uploadfilebazaga','$headline','$type','$text',$price)";
+                  $query = "INSERT INTO addpost(photo,headline,type,composition,price,user_id)
+                  VALUES ('$uploadfilebazaga','$headline','$type','$text',$price,1)";
                     //echo $query;
 
                   $result = $link->query($query);

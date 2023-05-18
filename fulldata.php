@@ -1,19 +1,22 @@
 <?php require_once 'database.php'?>
 <?php require_once "./linkk/top_link.php"?>
-<a href="addpost.php">Add uy</a>
-<form method="post">
-    <select name='type'>
-        <option >Turini tanlang</option>
-        <option value="ovqat">Ovqat</option>
-        <option value="baliq">Baliq</option>
-        <option value="ichimlik">Ichimlik</option>
-        <option value="musqaymoq">Musqaymoq</option>
-        <option value="desert">Desert</option>
-    </select><br>
-    <input type='text' name='headline' placeholder="Nomi" ><br>
+<?php require_once "navbar.php"?>
+<div class="search_bolim">
+    <form method="post" enctype="multipart/form-data">
+        <div >
+            <select name='type'>
+                <option >Turini tanlang</option>
+                <option value="ovqat">Ovqat</option>
+                <option value="fastfood">Fastfood</option>
+                <option value="ichimlik">Ichimlik</option>
+                <option value="musqaymoq">Musqaymoq</option>
+                <option value="desert">Desert</option>
+            </select><br>
+            <input type='text' name='headline' placeholder="Nomi" ><br>
 
-    <input class="btn inpt" type="submit" value="Qidirish" ><br><br>
-</form>
+            <input class="btn inpt" type="submit" value="Qidirish" ><br><br>
+        </div>
+    </form>
 <?php
 
 $link = mysqli_connect("localhost", "root", "")
@@ -26,7 +29,7 @@ if ($_POST['headline']){
 }
 
 $ovqat="ovqat";
-$baliq="baliq";
+$fastfood="fastfood";
 $desert="desert";
 $ichimlik="ichimlik";
 $musqaymoq="musqaymoq";
@@ -36,7 +39,7 @@ if(isset($_POST['type'])){
     if($_POST['type'] == $ovqat){
         $turi="and type ='{$_POST['type']}'";
     }
-    if($_POST['type'] == $baliq){
+    if($_POST['type'] == $fastfood){
         $turi="and type ='{$_POST['type']}'";
     }
     if($_POST['type'] == $ichimlik){
@@ -55,26 +58,27 @@ if(isset($_POST['type'])){
     $query = "SELECT * FROM addpost WHERE 1=1 ".$sarlavha.$turi;
 echo $query;
     $result = mysqli_query($link, $query) or die("So'rov ishlamadi : " . mysqli_error($link));
-/*echo 1;*/
-    print "<table class='jadval' border=1><tr><th>Turi</th>
-<th>Nomi</th><th>Tarkibi</th><th>Narxi</th><th>Rasim</th><th></th></tr>\n";
+    echo "<div class='search_posts'>";
     while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-        print "<tr>";
-        print "<td>{$line['type']}</td>";
-        print "<td>{$line['headline']}</td>";
-        print "<td>{$line['composition']}</td>";
-        print "<td>{$line['price']}</td>";
-        print "<td>{$line['photo']}</td>";
-        print "<td><a  href='edit.php?id={$line['id']}'> yangilash</a></td>";
-        print "<td><a  href='delete.php?id={$line['id']}'> o'chirish</a></td>";
-        print "</tr>";
+        echo"
+            <div class='search_posts'>  
+                <div class='userpost'>
+                    <img src='{$line['photo']}'>
+                    <h4>{$line['headline']}</h4>
+                    <p>{$line['type']}</p>
+                    <h5 >{$line['price']} so'm</h5>
+                    <a href='about_post.php' style='text-decoration: none'>Tayyorlash</a>
+                </div>
+            </div>
+        ";
     }
-    print "</table>\n";
-
+    echo "</div>";
     mysqli_free_result($result);
     mysqli_close($link);
 
     ?>
+
+</div>
 <?php require_once "./linkk/bottom_link.php"?>
 
 

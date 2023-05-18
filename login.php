@@ -10,53 +10,56 @@
 </head>
 <body class="background1">
 
-<form method="post">
+<?php
+
+if(isset($_POST['submit'])){
+    $new_password= md5($_POST["password"]);
+    $query = "SELECT * FROM user WHERE user_name = '{$_POST['user']}' and password = '{$_POST['password']}'";
+
+    $result = mysqli_query($link, $query);
+
+
+    if (mysqli_num_rows($result)!=0) {
+        header( "Refresh:3; index.php", true, 303);
+        ?>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        checking
+        <?php
+
+    }else{
+        header( "Refresh:3; login.php", true, 303);
+    }
+}
+else{
+?>
+
+
+<form  method="post">
     <div class="login1" >
         <div class="login2">
             <a href="login.php">
                 <img  src="./assets/images/mashup-logo.jpg">
             </a>
             <h1>LOG IN</h1>
+            <?php /*if (isset($_GET['error'])){ */?><!--
+            <p class="error"><?php /*echo $_GET['error'];*/?></p>
+            --><?php /*}*/?>
             <div>
-                <?php
-                echo "<input class='inputlogin' type='text' name='user'>";?>
+                <input class="inputlogin" type="text" name="user">
                 <p >User </p><br>
             </div>
             <div>
-                <?php echo "<input class='inputlogin' type='password' name='password'>";?>
+                <input class="inputlogin" type="password" name="password">
                 <p>Password</p><br>
             </div>
-            <input class="inputok" type="submit" name="submit" value="ok">
+            <input class="inputok" type="submit" value="ok">
+            <a class="aclas" href="registor.php" >Parolni tiklash</a>
             <a class="aclas" href="registor.php" >Register</a>
         </div>
     </div>
 </form>
-
-<?php
-
-
-   /* if (isset($_POST['user'])){
-    }
-
-if (isset($_POST['submit'])){
-//    echo '3333';
-    $user=$_POST['user'];
-    $password=$_POST['password'];
-    $query = "SELECT * FROM user where username='{$user}' and password='{$password}'";
-    $result = $link->query($query);
-    //echo $result;
-    if (mysqli_num_rows($result)!=0) {
-        header( "Refresh:3; index.php", true, 303);
-        */?><!--
-         <h2>404 error</h2>
-        --><?php
-/*
-    }else{
-        header( "Refresh:3; login.php", true, 303);
-    }
-    //header("location: index.php");
-}
-*/?>
+<?php          }
+?>
 
 </body>
 </html>

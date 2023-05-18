@@ -33,35 +33,17 @@
       <div class="menu_o">
           <a href="./nationalFood.php" class="ovqat_a">
               Ko'proq
-              <!--<div class="project-text-holder">
-                  <div class="project-text-inner">
-                      <h3>Vivamus vestibulum</h3>
-                      <p>Discover more</p>
-                  </div>
-              </div>-->
           </a>
       </div>
       <div class="menu_dessert">
           <div class="menu_d">
               <a href="./pitsaFood.php" class="project-description">
-                  <h4>Ko'proq</h4>
-                  <!--   <div class="project-text-holder">
-                  <div class="project-text-inner">
-                    <h3>Vivamus vestibulum</h3>
-                    <p>Discover more</p>
-                  </div>
-                  </div>-->
+                 Ko'proq
               </a>
           </div>
           <div class="menu_m">
               <a href="./pitsaFood.php" class="menu_m1">
-                  <img class="images3" alt="" src="./assets/menu_image/fastfood.png">
-                  <!--   <div class="project-text-holder">
-                  <div class="project-text-inner">
-                    <h3>Vivamus vestibulum</h3>
-                    <p>Discover more</p>
-                  </div>
-                  </div>-->
+                  Ko'proq
               </a>
           </div>
       </div>
@@ -70,36 +52,18 @@
       <div class="menu_ichimlik">
           <div class="menu_i">
               <a href="./pitsaFood.php" class="project-description">
-                  <img class="images3" alt="" src="./assets/menu_image/ichimliklar.png">
-                  <!--   <div class="project-text-holder">
-                  <div class="project-text-inner">
-                    <h3>Vivamus vestibulum</h3>
-                    <p>Discover more</p>
-                  </div>
-                  </div>-->
+                  Ko'proq
               </a>
           </div>
-          <div class="menu_m">
+          <div class="menu_mu">
               <a href="./pitsaFood.php" class="menu_m1">
-                  <img class="images3" alt="" src="./assets/menu_image/musqaymoq.png">
-                  <!--   <div class="project-text-holder">
-                  <div class="project-text-inner">
-                    <h3>Vivamus vestibulum</h3>
-                    <p>Discover more</p>
-                  </div>
-                  </div>-->
+                  Ko'proq
               </a>
           </div>
       </div>
     <div class="menu_s">
       <a href="./project.php" class="project-description">
-          <img class="images1" alt="" src="./assets/menu_image/snacks.png">
-          <!--<div class="project-text-holder">
-            <div class="project-text-inner">
-              <h3>Vivamus vestibulum</h3>
-              <p>Discover more</p>
-            </div>
-          </div>-->
+          Ko'proq
       </a>
     </div>
   </div>
