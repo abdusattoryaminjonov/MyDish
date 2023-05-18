@@ -4,39 +4,45 @@
     <div class="row hero">
     <div class="userpage" >
         <h1 style="text-align: center">User</h1>
-        <div class="user_colum">
-            <img src="photos/bmw-m4-wallpaper-3840x2400_9.jpg" id="profile-pic">
-            <label for="input-file">upload</label>
-            <input type="file" accept="image/jpeg , image/png, image/jpg" id="input-file">
+        <?php
+        echo "
+        <div class='user_colum'>
+            <img src='{$_SESSION['photo']}' id='profile-pic'>
+            <label for='input-file'>upload</label>
+            <input type='file' accept='image/jpeg , image/png, image/jpg' id='input-file'>
         </div>
         <div>
-            <h3>Akbarov Akbar</h3>
-            <h4>Oshpaz</h4>
-            <p>My hobby is cooking</p>
+            <h3>{$_SESSION['user_name']}</h3>
+            <p>{$_SESSION['bio']}</p>
         </div>
+        ";
+        ?>
         <hr>
         <div class="postmenu">
-            <div class="userpost">
-                <img src="assets/images/post_image3.png">
-                <h4>Post headline</h4>
-                <p>Pishiriq</p>
-                <h5 >10$</h5>
-                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
-            </div>
-            <div class="userpost">
-                <img src="assets/images/post_image2.png">
-                <h4>Post headline</h4>
-                <p>Ovqat</p>
-                <h5>50$</h5>
-                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
-            </div>
-            <div class="userpost">
-                <img src="assets/images/post_image1.png">
-                <h4>Post headline</h4>
-                <p>Ovqat</p>
-                <h5>40$</h5>
-                <a href="about_post.php" style="text-decoration: none">Tayyorlash</a>
-            </div>
+            <?php
+                    $link = mysqli_connect("localhost", "root", "")
+                    or die("Serverga bog'lanmadi : " . mysqli_error($link));
+                    mysqli_select_db($link, "mydish") or die("Bazaga bog'lanmadi");
+
+                    $query = "SELECT * FROM addpost order by user_id={$_SESSION['id']}";
+                    $result = mysqli_query($link, $query) or die("So'rov ishlamadi : " . mysqli_error($link));
+                    echo "<div class='search_posts1'>";
+                    while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                        echo"
+                                
+                                    <div class='userpost'>
+                                        <img src='{$line['photo']}'>
+                                        <h4>{$line['headline']}</h4>
+                                        <p>{$line['type']}</p>
+                                        <h5 >{$line['price']} so'm</h5>
+                                        <a href='about_post.php?id={$line['id']}' style='text-decoration: none'>Tayyorlash</a>
+                                    </div>
+                            ";
+                    }
+                    echo "</div>";
+                    mysqli_free_result($result);
+                    mysqli_close($link);
+            ?>
         </div>
 
     </div>

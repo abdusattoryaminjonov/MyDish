@@ -27,7 +27,7 @@ echo "<div class='search_bolim'>";
        
        
        ";
-    }
+}
     
     echo "</div>";
 }

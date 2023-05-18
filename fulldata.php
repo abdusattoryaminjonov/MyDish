@@ -3,7 +3,7 @@
 <?php require_once "navbar.php"?>
 <div class="search_bolim">
     <form method="post" enctype="multipart/form-data">
-        <div >
+        <div class="search_buttom">
             <select name='type'>
                 <option >Turini tanlang</option>
                 <option value="ovqat">Ovqat</option>
@@ -14,8 +14,9 @@
                 <option value="snack">Snack</option>
             </select><br>
             <input type='text' name='headline' placeholder="Nomi" ><br>
-
+            <div class="search_buttom1">
             <input class="btn inpt" type="submit" value="Qidirish" ><br><br>
+            </div>
         </div>
     </form>
 <?php

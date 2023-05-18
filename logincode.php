@@ -23,12 +23,12 @@ if (isset($_POST['user']) && isset($_POST['password'])){
         if(mysqli_num_rows($result)===1){
             $row=mysqli_fetch_assoc($result);
             if ($row['user_name']===$user && $row['password']===$password){
-                $SESSION['user_name']=$row['user_name'];
-                $SESSION['password']=$row['password'];
-                $SESSION['photo']=$row['photo'];
-                $SESSION['bio']=$row['bio'];
-                $SESSION['phonenumber']=$row['phonenumber'];
-                $SESSION['id']=$row['id'];
+                $_SESSION['user_name']=$row['user_name'];
+                $_SESSION['password']=$row['password'];
+                $_SESSION['photo']=$row['photo'];
+                $_SESSION['bio']=$row['bio'];
+                $_SESSION['phonenumber']=$row['phonenumber'];
+                $_SESSION['id']=$row['id'];
                 header("Location:index.php");
                 exit();
             }else{

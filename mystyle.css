@@ -103,8 +103,47 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
+.search_posts1{
+    width: 800px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
 
-
+.search_buttom{
+    display: flex;
+    margin: 20px;
+}
+.search_buttom select{
+    width: 300px;
+    height: 50px;
+    border:2px solid #ec4e34;
+    border-radius: 10px;
+    margin: 10px;
+}
+.search_buttom input{
+    width: 300px;
+    height: 50px;
+    border:2px solid #ec4e34;
+    border-radius: 10px;
+    margin: 10px;
+}
+.search_buttom1 input{
+    width: 100px;
+    height: 50px;
+    border:2px solid #ec4e34;
+    border-radius: 10px;
+    margin: 10px;
+    background: #ec4e34;
+    color: white;
+    transition: 0.2s;
+}
+.search_buttom1 input:hover{
+    background: white;
+    color: #ec4e34;
+}
 
 .error{
     background: #F2DEDE;
