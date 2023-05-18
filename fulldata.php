@@ -7,10 +7,11 @@
             <select name='type'>
                 <option >Turini tanlang</option>
                 <option value="ovqat">Ovqat</option>
-                <option value="fastfood">Fastfood</option>
+                <option value="fastFood">Fastfood</option>
                 <option value="ichimlik">Ichimlik</option>
-                <option value="musqaymoq">Musqaymoq</option>
-                <option value="desert">Desert</option>
+                <option value="muzqaymoq">Musqaymoq</option>
+                <option value="dessert">Desert</option>
+                <option value="snack">Snack</option>
             </select><br>
             <input type='text' name='headline' placeholder="Nomi" ><br>
 
@@ -25,14 +26,15 @@ mysqli_select_db($link, "mydish") or die("Bazaga bog'lanmadi");
 
 $sarlavha="";
 if ($_POST['headline']){
-        $sarlavha=" and  headline='{$_POST['headline']}'";
+        $sarlavha=" and  headlin='{$_POST['headline']}'";
 }
 
 $ovqat="ovqat";
-$fastfood="fastfood";
-$desert="desert";
+$fastfood="fastFood";
+$desert="dessert";
 $ichimlik="ichimlik";
-$musqaymoq="musqaymoq";
+$muzqaymoq="muzqaymoq";
+$snack="snack";
 //hona turiga qarab tekshirish
 $turi="";
 if(isset($_POST['type'])){
@@ -45,10 +47,13 @@ if(isset($_POST['type'])){
     if($_POST['type'] == $ichimlik){
         $turi="and type ='{$_POST['type']}'";
     }
-    if($_POST['type'] == $musqaymoq){
+    if($_POST['type'] == $muzqaymoq){
         $turi="and type ='{$_POST['type']}'";
     }
     if($_POST['type'] == $desert){
+        $turi="and type ='{$_POST['type']}'";
+    }
+    if($_POST['type'] == $snack){
         $turi="and type ='{$_POST['type']}'";
     }
 
@@ -56,7 +61,6 @@ if(isset($_POST['type'])){
 
 //  MYSQlda ekranga qidirish oqrqali chiqarish
     $query = "SELECT * FROM addpost WHERE 1=1 ".$sarlavha.$turi;
-echo $query;
     $result = mysqli_query($link, $query) or die("So'rov ishlamadi : " . mysqli_error($link));
     echo "<div class='search_posts'>";
     while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
@@ -67,7 +71,7 @@ echo $query;
                     <h4>{$line['headline']}</h4>
                     <p>{$line['type']}</p>
                     <h5 >{$line['price']} so'm</h5>
-                    <a href='about_post.php' style='text-decoration: none'>Tayyorlash</a>
+                    <a href='about_post.php?id={$line['id']}'  style='text-decoration: none'>Tayyorlash</a>
                 </div>
             </div>
         ";

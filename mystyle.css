@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.post-text-area{
+    resize: none;
+    width: 500px !important;
+    height: 200px !important;
+}
+
 .lds-roller {
     display: inline-block;
     position: relative;
@@ -91,10 +97,14 @@
     flex-direction: column;
 }
 .search_posts{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
+
+
 
 .error{
     background: #F2DEDE;
@@ -587,4 +597,10 @@
     padding: 30px ;
     border-radius: 50%;
     background-color: rgba(236, 78, 52, 0.76);
+}
+
+.menu_food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

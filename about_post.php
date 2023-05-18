@@ -1,19 +1,36 @@
 <?php require_once "./linkk/top_link.php"?>
+<?php require_once 'database.php'?>
+
 <?php require_once 'navbar.php'?>
-<div class="p_r">
-    <div class="p_img">
-        <img src="./assets/images/post_image2.png">
+
+<?php
+if (isset($_GET['id'])) {
+    $id=$_GET['id'];
+    $result = mysqli_query($link, "SELECT * FROM addpost WHERE id=$id");
+echo "<div class='search_bolim'>";
+    while ($request = mysqli_fetch_array($result)) {
+       echo "
+       
+       <div class='p_r'>
+    <div class='p_img'>
+        <img src='{$request['photo']}'>
     </div>
-    <div class="p_s">
-        <h2 name="headline">QozonKovob</h2>
-        <h3 name="price">50$</h3>
-        <h4 name="type">Ovqat</h4>
-        <p name="about">QozonKovobni tayyorlash uchun - 1kg kartoshka, 1kg Qo'y go'shti , 0.5l o'simlik yog'i, 2 dona piyoz va tabga ko'ra ziravorlar.
-        <br> 1-kartoshka va go'shtni 30 minut yog'da qo'vuramiz .
-        <br> 2- 30 minut kartoshka va go'shtni ustiga ziravorlar solib va piyozni mayda qib to'rab uni ham solib dimlaymiz .
-        <br> Ovqatimiz tayyor!</p>
-        <a href="contact.php"  title="">Bog'lanish</a>
+    <div class='p_s'>
+        <h2 >{$request['headline']}</h2>
+        <h3 >{$request['price']}</h3>
+        <h4>{$request['type']}</h4>
+        <p >{$request['composition']}</p>
+        <a href='contact.php'  >Bog'lanish</a>
     </div>
 </div>
+       
+       
+       
+       ";
+    }
+    
+    echo "</div>";
+}
+?>
 </body>
 </html>

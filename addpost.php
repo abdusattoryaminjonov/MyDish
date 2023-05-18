@@ -28,14 +28,16 @@
                     <br>";
                     echo "
                         <select name='type'>
-                            <option >Turini tanlang</option>
                             <option value='ovqat'>Ovqat</option>
-                            <option value='disert'>Disert</option>
+                            <option value='dessert'>Dessert</option>
                             <option value='ichimlik'>Ichimlik</option>
+                            <option value='fastFood'>FastFood</option>
+                            <option value='snack'>Snack</option>
+                            <option value='muzqaymoq'>Muzqaymoq</option>
                          </select><br>
                          ";
                     echo "<input type='text' name='headline' placeholder='Headline'><br>";
-                    echo "<textarea class='form-control' rows='3' name='text' placeholder='Enter composition'></textarea>";
+                    echo "<textarea class='form-control post-text-area' rows='3' name='text' placeholder='Enter composition'></textarea>";
                     echo "<input type='number' name='price' placeholder='Price'><br>";
                 ?>
                     <input type="hidden" name="soni" value="5">

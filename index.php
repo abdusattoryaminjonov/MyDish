@@ -28,45 +28,46 @@
 <!-- Add your site or app content here -->
 
 
- 
-  <div class="layout_flex">
-      <div class="menu_o">
-          <a href="./nationalFood.php" class="ovqat_a">
-              Ko'proq
-          </a>
-      </div>
-      <div class="menu_dessert">
-          <div class="menu_d">
-              <a href="./pitsaFood.php" class="project-description">
+ <form  method="post">
+     <div class="layout_flex">
+         <div class="menu_o">
+             <a href="menu.php" id=ovqat class="ovqat_a">
                  Ko'proq
-              </a>
-          </div>
-          <div class="menu_m">
-              <a href="./pitsaFood.php" class="menu_m1">
-                  Ko'proq
-              </a>
-          </div>
-      </div>
-  </div>
-  <div class="layout_flex">
-      <div class="menu_ichimlik">
-          <div class="menu_i">
-              <a href="./pitsaFood.php" class="project-description">
-                  Ko'proq
-              </a>
-          </div>
-          <div class="menu_mu">
-              <a href="./pitsaFood.php" class="menu_m1">
-                  Ko'proq
-              </a>
-          </div>
-      </div>
-    <div class="menu_s">
-      <a href="./project.php" class="project-description">
-          Ko'proq
-      </a>
-    </div>
-  </div>
+             </a>
+         </div>
+         <div class="menu_dessert">
+             <div class="menu_d">
+                 <a href="./dessert.php" class="project-description">
+                     Ko'proq
+                 </a>
+             </div>
+             <div class="menu_m">
+                 <a href="./fastFood.php" class="menu_m1">
+                     Ko'proq
+                 </a>
+             </div>
+         </div>
+     </div>
+     <div class="layout_flex">
+         <div class="menu_ichimlik">
+             <div class="menu_i">
+                 <a href="./ichimlik.php" class="project-description">
+                     Ko'proq
+                 </a>
+             </div>
+             <div class="menu_mu">
+                 <a href="./muzqaymoq.php" class="menu_m1">
+                     Ko'proq
+                 </a>
+             </div>
+         </div>
+         <div class="menu_s">
+             <a href="./snack.php" class="project-description">
+                 Ko'proq
+             </a>
+         </div>
+     </div>
+ </form>
 
 
 
@@ -76,7 +77,7 @@
   });
 </script>
 
-</main>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function (event) {

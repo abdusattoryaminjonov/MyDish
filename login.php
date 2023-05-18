@@ -10,40 +10,17 @@
 </head>
 <body class="background1">
 
-<?php
 
-if(isset($_POST['submit'])){
-    $new_password= md5($_POST["password"]);
-    $query = "SELECT * FROM user WHERE user_name = '{$_POST['user']}' and password = '{$_POST['password']}'";
-
-    $result = mysqli_query($link, $query);
-
-
-    if (mysqli_num_rows($result)!=0) {
-        header( "Refresh:3; index.php", true, 303);
-        ?>
-        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-        checking
-        <?php
-
-    }else{
-        header( "Refresh:3; login.php", true, 303);
-    }
-}
-else{
-?>
-
-
-<form  method="post">
+<form  action="logincode.php" method="post">
     <div class="login1" >
         <div class="login2">
             <a href="login.php">
                 <img  src="./assets/images/mashup-logo.jpg">
             </a>
             <h1>LOG IN</h1>
-            <?php /*if (isset($_GET['error'])){ */?><!--
-            <p class="error"><?php /*echo $_GET['error'];*/?></p>
-            --><?php /*}*/?>
+            <?php if (isset($_GET['error'])){ ?>
+            <p class="error"><?php echo $_GET['error'];?></p>
+            <?php }?>
             <div>
                 <input class="inputlogin" type="text" name="user">
                 <p >User </p><br>
@@ -58,8 +35,7 @@ else{
         </div>
     </div>
 </form>
-<?php          }
-?>
+
 
 </body>
 </html>
