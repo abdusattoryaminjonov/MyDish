@@ -25,6 +25,7 @@
                     mysqli_select_db($link, "mydish") or die("Bazaga bog'lanmadi");
 
                     $query = "SELECT * FROM addpost order by user_id={$_SESSION['id']}";
+
                     $result = mysqli_query($link, $query) or die("So'rov ishlamadi : " . mysqli_error($link));
                     echo "<div class='search_posts1'>";
                     while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC)) {

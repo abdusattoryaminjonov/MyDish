@@ -20,7 +20,8 @@ echo "<div class='search_bolim'>";
         <h3 >{$request['price']}</h3>
         <h4>{$request['type']}</h4>
         <p >{$request['composition']}</p>
-        <a href='contact.php'  >Bog'lanish</a>
+        <a href='contact.php'  >+99894-000-00-00</a>
+        <a href='chat.php'  >Habar</a>
     </div>
 </div>
        

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .post-text-area{
     resize: none;
-    width: 500px !important;
-    height: 200px !important;
+    width: 300px !important;
+    height: 100px !important;
 }
 
 .lds-roller {
@@ -639,7 +639,19 @@
 }
 
 .menu_food{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.chat{
+    margin-top: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.chat h1{
+    color: #ec4e34;
+    font-family: 'Poppins', sans-serif; !important;
 }

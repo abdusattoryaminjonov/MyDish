@@ -1,6 +1,8 @@
 <?php require_once 'database.php'?>
 <?php require_once "./linkk/top_link.php"?>
-<?php require('navbar.php');?>
+<?php require('navbar.php');
+session_start();
+?>
 
  
 <div class="row">
@@ -64,7 +66,7 @@
                   }
                   //print_r($_FILES);
                   $query = "INSERT INTO addpost(photo,headline,type,composition,price,user_id)
-                  VALUES ('$uploadfilebazaga','$headline','$type','$text',$price,1)";
+                  VALUES ('$uploadfilebazaga','$headline','$type','$text',$price,{$_SESSION['id']})";
                     //echo $query;
 
                   $result = $link->query($query);

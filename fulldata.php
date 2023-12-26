@@ -27,7 +27,7 @@ mysqli_select_db($link, "mydish") or die("Bazaga bog'lanmadi");
 
 $sarlavha="";
 if ($_POST['headline']){
-        $sarlavha=" and  headlin='{$_POST['headline']}'";
+        $sarlavha=" and  headline like '%{$_POST['headline']}%'";
 }
 
 $ovqat="ovqat";

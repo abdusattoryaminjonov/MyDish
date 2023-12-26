@@ -30,7 +30,7 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="section-container-spacer">
-      <h1>Contact</h1>
+      <h1>Aloqa</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

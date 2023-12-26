@@ -23,7 +23,7 @@
         <li><a href="./index.php" class="menu_hover" title=""><img  src="./assets/navbar_icon/hous.svg"></a></li>
         <li><a href="./fulldata.php" class="menu_hover" title=""><img  src="./assets/navbar_icon/search.svg"></a></li>
         <li><a href="./addpost.php" class="menu_add" title=""><img src="./assets/navbar_icon/addpost.svg"></a></li>
-        <li><a href="./components.php" class="menu_hover" title=""><img src="./assets/navbar_icon/chat.svg"></a></li>
+        <li><a href="./chat.php" class="menu_hover" title=""><img src="./assets/navbar_icon/chat.svg"></a></li>
           <?php
           echo"
           <li><a href='user.php?id={$_SESSION['id']}' class='menu_hover'><img src='./assets/navbar_icon/user.svg'></a></li>
